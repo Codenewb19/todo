@@ -6,12 +6,12 @@
       var checkedStatus = task.done ? "checked" : "";
       var liClass = task.done ? "completed" : "";
       var liElement = '<li id="listItem-' + task.id +'" class="' + liClass + '">' +
-      '<div class="view"><input class="toggle" type="checkbox"' +
+        '<div class="view"><input class="toggle" type="checkbox"' +
         " data-id='" + task.id + "'" +
-        checkedStatus +
+          checkedStatus +
         '><label>' +
-         task.title +
-         '</label></div></li>';
+        task.title +
+        '</label></div></li>';
 
       return liElement;
     }
